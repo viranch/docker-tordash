@@ -21,10 +21,10 @@ Dashboard web page (`http://your-ip/`) shows:
 
 - Install [docker](https://docs.docker.com/installation/#installation).
 
-- Run [transmission](https://github.com/viranch/docker-transmission) and [jackett](https://github.com/viranch/docker-jackett):
+- Run [transmission](https://github.com/viranch/docker-transmission) and [jackett](https://docs.linuxserver.io/images/docker-jackett):
 ```
 docker run -d --name transmission -d /path/to/transmission:/data [...] ghcr.io/viranch/transmission
-docker run -d --name jackett -d /path/to/jackett:/config --net container:transmission [...] ghcr.io/viranch/jackett
+docker run -d --name jackett -d /path/to/jackett:/config --net container:transmission [...] lscr.io/linuxserver/jackett
 ```
 
 - Get Jackett API key from its web interface for supplying as env var below or use `-d /path/to/jackett:/data/jackett:ro` to let it grab the API key automagically.
