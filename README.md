@@ -11,11 +11,11 @@ Dashboard web page (`http://your-ip/`) shows:
 ### What does it look like?
 
 ##### Search for torrents
-![Search for torrents](https://raw.githubusercontent.com/viranch/docker-tv/master/screenshots/ss1.png)
+![Search for torrents](https://raw.githubusercontent.com/viranch/docker-tordash/main/screenshots/ss1.png)
 ##### Select from search results
-![Select from search results](https://raw.githubusercontent.com/viranch/docker-tv/master/screenshots/ss2.png)
+![Select from search results](https://raw.githubusercontent.com/viranch/docker-tordash/main/screenshots/ss2.png)
 ##### Torrent downloads
-![Torrent downloads](https://raw.githubusercontent.com/viranch/docker-tv/master/screenshots/ss3.png)
+![Torrent downloads](https://raw.githubusercontent.com/viranch/docker-tordash/main/screenshots/ss3.png)
 
 ### How to use?
 
@@ -40,3 +40,5 @@ docker run [...] -e AUTH_USER=bob -e AUTH_PASS=myprecious [...] ghcr.io/viranch/
 ```
 
 - Navigate to `http://your-ip/`. You can change the port with the `-p` switch, eg: `-p 8000:80`.
+
+- See a sample docker-compose setup at [viranch/docker-tv](https://github.com/viranch/docker-tv)
