@@ -21,5 +21,4 @@ EXPOSE 80
 
 # Define how to run the image
 ENV DATA_DIR_NAME=downloads
-ENTRYPOINT ["/opt/scripts/start.sh"]
-CMD ["/opt/scripts/jk_start.sh"]
+ENTRYPOINT ["/opt/scripts/jk_start.sh"]
