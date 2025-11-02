@@ -27,7 +27,7 @@ docker run -d --name transmission -d /path/to/transmission:/data [...] ghcr.io/v
 docker run -d --name jackett -d /path/to/jackett:/config --net container:transmission [...] lscr.io/linuxserver/jackett
 ```
 
-- Get Jackett API key from its web interface for supplying as env var below or use `-d /path/to/jackett:/data/jackett:ro` to let it grab the API key automagically.
+- Get Jackett API key from its web interface for supplying as env var below, or use `-d /path/to/jackett:/jackett:ro` to let it grab the API key automagically.
 
 - Run dashboard container (needs to share network with transmission & jackett containers):
 ```
